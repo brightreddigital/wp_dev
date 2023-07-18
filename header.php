@@ -3,7 +3,7 @@
  * @package brightred
  */
 
-include '/inc/shortcodes.php';
+include '/inc/functions/shortcodes.php';
 
 ?>
 <!doctype html>
