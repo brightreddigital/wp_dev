@@ -8,7 +8,7 @@
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Release number
-	define( '_S_VERSION', '1.0.1' );
+	define( '_S_VERSION', '0.0.1' );
 }
 
 // Load partials
