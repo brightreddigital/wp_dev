@@ -18,10 +18,6 @@ p {
 	line-height: 1.5em;
 }
 
-.elementor-widget-text-editor * {
-	color: inherit;
-}
-
 a:not(#wpadminbar a){
 	font-family: var(--body-font);
 	line-height: 1.5em;
