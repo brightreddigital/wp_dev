@@ -1924,6 +1924,75 @@ function my_acf_add_local_field_groups() {
 	));
 
 	endif;
+
+				if( function_exists('acf_add_local_field_group') ):
+
+acf_add_local_field_group(array(
+	'key' => 'group_63d27efc46234',
+	'title' => 'Import Fonts',
+	'fields' => array(
+		array(
+			'key' => 'field_63d27efc87105',
+			'label' => 'Google Font',
+			'name' => 'google_font',
+			'aria-label' => '',
+			'type' => 'textarea',
+			'instructions' => 'Copy and paste the entire embed code (in <link> tags) from https://fonts.google.com/specimen/FONT_NAME',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'maxlength' => '',
+			'rows' => '',
+			'placeholder' => '',
+			'new_lines' => '',
+		),
+		array(
+			'key' => 'field_63d27fd387106',
+			'label' => 'Adobe Typekit',
+			'name' => 'typekit',
+			'aria-label' => '',
+			'type' => 'text',
+			'instructions' => 'Copy and paste the Project ID from the kit you wish to use on https://fonts.adobe.com/my_fonts#web_projects-section (login required)',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'maxlength' => '',
+			'placeholder' => '',
+			'prepend' => '',
+			'append' => '',
+		),
+	),
+	'location' => array(
+		array(
+			array(
+				'param' => 'options_page',
+				'operator' => '==',
+				'value' => 'acf-options-typography',
+			),
+		),
+	),
+	'menu_order' => 0,
+	'position' => 'normal',
+	'style' => 'default',
+	'label_placement' => 'top',
+	'instruction_placement' => 'label',
+	'hide_on_screen' => '',
+	'active' => true,
+	'description' => '',
+	'show_in_rest' => 0,
+));
+
+endif;		
 	
 }
 
