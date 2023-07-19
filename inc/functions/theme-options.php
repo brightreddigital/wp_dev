@@ -26,12 +26,6 @@ function checkACFtheme() {
 		'menu_title'  => 'Post Types',
 		'parent_slug' => 'theme-general-settings',
 	));
-
-	acf_add_options_sub_page(array(
-		'page_title'  => 'Theme Footer Settings',
-		'menu_title'  => 'Footer',
-		'parent_slug' => 'theme-general-settings',
-	));
 	
 
 
@@ -598,31 +592,6 @@ function my_acf_add_local_field_groups() {
 		'title' => 'Logo',
 		'fields' => array(
 			array(
-				'key' => 'field_62e3b7c8b4e58',
-				'label' => 'Site Logo',
-				'name' => 'site_logo',
-				'aria-label' => '',
-				'type' => 'image',
-				'instructions' => 'Also add <a href="/wp-admin/customize.php">HERE</a> under SITE INDENTITY -> LOGO.',
-				'required' => 0,
-				'conditional_logic' => 0,
-				'wrapper' => array(
-					'width' => '',
-					'class' => '',
-					'id' => '',
-				),
-				'return_format' => 'url',
-				'preview_size' => 'medium',
-				'library' => 'all',
-				'min_width' => '',
-				'min_height' => '',
-				'min_size' => '',
-				'max_width' => '',
-				'max_height' => '',
-				'max_size' => '',
-				'mime_types' => '',
-			),
-			array(
 				'key' => 'field_6353fdc72fc3e',
 				'label' => 'White Logo',
 				'name' => 'white_logo',
@@ -646,26 +615,6 @@ function my_acf_add_local_field_groups() {
 				'max_size' => '',
 				'mime_types' => '',
 				'preview_size' => 'thumbnail',
-			),
-			array(
-				'key' => 'field_62e3bb5a34126',
-				'label' => 'Favicon',
-				'name' => 'favicon',
-				'aria-label' => '',
-				'type' => 'file',
-				'instructions' => 'Also add <a href="/wp-admin/customize.php">HERE</a> under SITE INDENTITY -> SITE ICON.',
-				'required' => 0,
-				'conditional_logic' => 0,
-				'wrapper' => array(
-					'width' => '',
-					'class' => '',
-					'id' => '',
-				),
-				'return_format' => 'url',
-				'library' => 'all',
-				'min_size' => '',
-				'max_size' => '',
-				'mime_types' => '',
 			),
 		),
 		'location' => array(
