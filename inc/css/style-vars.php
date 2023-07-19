@@ -5,7 +5,7 @@
   --body-colour: <?php the_field( 'body_colour', 'option' ) ?>;
   --body-size: <?php the_field( 'body_size', 'option' ) ?>px;
 
-  --link-colour: <?php the_field( 'link_colour', 'option' ) ?>);
+  --link-colour: <?php the_field( 'link_colour', 'option' ) ?>;
   --link-weight: <?php the_field( 'link_weight' ,'option' ) ?>;
   --link-hover-colour: <?php the_field( 'link_hover_colour', 'option' ) ?>;
   --link-style: <?php the_field( 'link_style', 'option' ) ?>;
