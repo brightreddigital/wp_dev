@@ -1,39 +1,39 @@
 /* Typography */
 
-/*body {
+body {
 	font-size: var(--body-size);
 	color: var(--body-colour);
 	font-family: var(--body-font);
 	font-weight: var(--body-weight);
-}*/
+}
 
 p:last-of-type {
 	margin-bottom: 0 ;
 }
 
 p {
-	/*color: var(--body-colour);
+	color: var(--body-colour);
 	font-family: var(--body-font);
 	font-weight: var(--body-weight);
-	line-height: 1.5em;*/
+	line-height: 1.5em;
 }
 
-/*.elementor-element * {
+.elementor-widget-text-editor * {
 	color: inherit;
-}*/
+}
 
 a:not(#wpadminbar a){
 	font-family: var(--body-font);
 	line-height: 1.5em;
 }
 
-p a, p a:visited, .icon-text-inline {
+a, a:visited, .icon-text-inline {
 	font-weight: var(--link-weight);
 	font-style: var(--link-style);
-	color: var(--link-colour) !important;
+	color: var(--link-colour);
 }
 
-p a:hover, .icon-text-inline:hover {
+a:hover, .icon-text-inline:hover {
 	color: var(--link-hover-colour);
 }
 
