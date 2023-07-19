@@ -1,11 +1,11 @@
 /* Typography */
 
-body {
+/*body {
 	font-size: var(--body-size);
 	color: var(--body-colour);
 	font-family: var(--body-font);
 	font-weight: var(--body-weight);
-}
+}*/
 
 p:last-of-type {
 	margin-bottom: 0 ;
@@ -28,9 +28,9 @@ a:not(#wpadminbar a){
 }
 
 p a, p a:visited, .icon-text-inline {
-	color: var(--link-colour);
 	font-weight: var(--link-weight);
 	font-style: var(--link-style);
+	color: var(--link-colour) !important;
 }
 
 p a:hover, .icon-text-inline:hover {
