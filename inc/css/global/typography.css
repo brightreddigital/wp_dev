@@ -18,9 +18,9 @@ p {
 	line-height: 1.5em;
 }
 
-.elementor-element * {
+/*.elementor-element * {
 	color: inherit;
-}
+}*/
 
 a:not(#wpadminbar a){
 	font-family: var(--body-font);
