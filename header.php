@@ -13,13 +13,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<?php if( get_field('typekit') ): ?>
-		<link rel="stylesheet" href="https://use.typekit.net/<?php the_field('typekit'); ?>.css">
+	<?php if( get_field('typekit', 'option') ): ?>
+		<link rel="stylesheet" href="https://use.typekit.net/<?php the_field('typekit', 'option'); ?>.css">
 		<script type="text/javascript">console.log('typekit')</script>
 	<?php endif; ?>
 
-	<?php if( get_field('google_font') ): ?>
-		<?php the_field('google_font'); ?>
+	<?php if( get_field('google_font', 'option') ): ?>
+		<?php the_field('google_font', 'option'); ?>
 	<?php endif; 
 
 	/* WP Headers */
