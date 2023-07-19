@@ -18,12 +18,16 @@ p {
 	line-height: 1.5em;
 }
 
+.elementor-element p {
+	color: inherit;
+}
+
 a:not(#wpadminbar a){
 	font-family: var(--body-font);
 	line-height: 1.5em;
 }
 
-a, a:visited, .icon-text-inline {
+p a, p a:visited, .icon-text-inline {
 	color: var(--link-colour);
 	font-weight: var(--link-weight);
 	font-style: var(--link-style);
