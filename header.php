@@ -15,6 +15,7 @@
 
 	<?php if( get_field('typekit') ): ?>
 		<link rel="stylesheet" href="https://use.typekit.net/<?php the_field('typekit'); ?>.css">
+		<script type="text/javascript">console.log('typekit')</script>
 	<?php endif; ?>
 
 	<?php if( get_field('google_font') ): ?>
