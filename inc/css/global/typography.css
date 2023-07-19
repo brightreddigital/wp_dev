@@ -1,10 +1,10 @@
 /* Typography */
 
 body {
-	font-size: var(--body-size);
+	/*font-size: var(--body-size);
 	color: var(--body-colour);
 	font-family: var(--body-font);
-	font-weight: var(--body-weight);
+	font-weight: var(--body-weight);*/
 }
 
 p:last-of-type {
