@@ -13,7 +13,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<?php if( get_field('typekit', 'option') ): ?>
+	<?php add_action( 'acf/init', 'checkACFtheme' );
+
+		function checkACFtheme() {
+
+	 if( get_field('typekit', 'option') ): ?>
 		<link rel="stylesheet" href="https://use.typekit.net/<?php the_field('typekit', 'option'); ?>.css">
 		<script type="text/javascript">console.log('typekit')</script>
 	<?php endif; ?>
@@ -22,6 +26,8 @@
 		<?php the_field('google_font', 'option'); ?>
 		<script type="text/javascript">console.log('google-font')</script>
 	<?php endif; 
+
+	};
 
 	/* WP Headers */
 	wp_head(); 
