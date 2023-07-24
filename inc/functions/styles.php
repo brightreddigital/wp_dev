@@ -24,17 +24,6 @@ function brightred_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
-
-	if( get_field('typekit', 'option') ): ?>
-		<link rel="stylesheet" href="https://use.typekit.net/<?php the_field('typekit', 'option'); ?>.css">
-		<script type="text/javascript">console.log('typekit')</script>
-	<?php endif; ?>
-
-	<?php if( get_field('google_font', 'option') ): ?>
-		<?php the_field('google_font', 'option'); ?>
-		<script type="text/javascript">console.log('google-font')</script>
-	<?php endif; 
-
 }
 
 add_action( 'wp_enqueue_scripts', 'brightred_scripts' );
