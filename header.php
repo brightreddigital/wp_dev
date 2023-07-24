@@ -20,6 +20,7 @@
 
 	<?php if( get_field('google_font', 'option') ): ?>
 		<?php the_field('google_font', 'option'); ?>
+		<script type="text/javascript">console.log('google-font')</script>
 	<?php endif; 
 
 	/* WP Headers */
