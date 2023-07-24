@@ -1951,7 +1951,7 @@ add_action('acf/init', 'my_acf_add_local_field_groups');
 
 function adobe_google(){
 
-	if( get_field('field_63d27fd387106', 'option') ): ?>
+	if( get_field('field_63d27fd387106') ): ?>
 		<link rel="stylesheet" href="https://use.typekit.net/<?php the_field('typekit', 'option'); ?>.css">
 		<script type="text/javascript">console.log('typekit')</script>
 	<?php endif; ?>
