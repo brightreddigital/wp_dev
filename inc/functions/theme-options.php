@@ -20,6 +20,41 @@ function checkACFtheme() {
 		'menu_title'  => 'Typography',
 		'parent_slug' => 'theme-general-settings',
 	));
+	
+
+
+	// Change Site Title, Descriptions and Email 
+
+	add_action('acf/init', 'siteDetails'); 
+	add_action('acf/init', 'dynamic_style'); 
+
+	function siteDetails() {
+
+		$sitetitle = get_field('site_title', 'option');   
+
+		if ($sitetitle) {
+			update_option('blogname', $sitetitle);
+		} else {
+			update_option( 'blogname', '' );  
+		}
+
+		$tagline = get_field('tagline', 'option');    
+
+		if ($tagline) {
+			update_option('blogdescription', $tagline);
+		} else {
+			update_option( 'blogdescription', '' ); 
+		}
+
+		$adminemail = get_field('admin_email', 'option');   
+
+			if ($adminemail) {
+				update_option('admin_email', $adminemail);
+			} else {
+				update_option( 'admin_email', '' ); 
+			}
+
+	}
 
 	// Add favicion link to <head>
 
@@ -45,6 +80,46 @@ function my_acf_add_local_field_groups() {
 		'key' => 'group_62e7b41297b52',
 		'title' => 'Details',
 		'fields' => array(
+			array(
+				'key' => 'field_62e3b113a5bab',
+				'label' => 'Site Title',
+				'name' => 'site_title',
+				'aria-label' => '',
+				'type' => 'text',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'maxlength' => '',
+			),
+			array(
+				'key' => 'field_62e3b239043f5',
+				'label' => 'Site Tagline',
+				'name' => 'tagline',
+				'aria-label' => '',
+				'type' => 'text',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'maxlength' => '',
+			),
 			array(
 				'key' => 'field_62e7b44addb54',
 				'label' => 'Address',
